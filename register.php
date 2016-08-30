@@ -12,7 +12,7 @@
   	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
   	<script src="js/jquery-3.1.0.min.js"></script>
-<!-- 
+<!--
   	<link rel="stylesheet" type="text/css" href="styles/file_uploader.css">
   	<script type="text/javascript" src="js/file_uploader.js"></script> -->
 
@@ -50,7 +50,7 @@
 		<form method="post" action="Register.php" enctype="multipart/form-data">
 			<!--Fields-->
 			<input type="text" name="nom" placeholder="Nom" required="required">
-			
+
 			<input type="text" name="prenom" placeholder="Prénom" required="required"></br>
 
 			<input type="email" name="mail" placeholder="E-mail" required="required">
@@ -61,7 +61,7 @@
 			<input type="password" name="password_confirm" placeholder="Confimer mot de passe" required="required" ></br>
 
 			<input type="file" name="avatar"></br>
-<!-- 
+<!--
 			<div class="input-file-container">
 			  <input class="input-file" id="my-file" type="file" name="avatar">
 			  <label for="my-file" class="input-file-trigger" tabindex="0">Select a file...</label>
@@ -78,7 +78,7 @@
 			if(
 				isset($_POST['nom']) 		&& !empty($_POST['nom'])
 			 && isset($_POST['prenom']) 	&& !empty($_POST['prenom'])
-			 && isset($_POST['mail']) 		&& !empty($_POST['mail']) 
+			 && isset($_POST['mail']) 		&& !empty($_POST['mail'])
 			 && isset($_POST['pseudo']) 	&& !empty($_POST['pseudo'])
 			 && isset($_POST['password']) 	&& !empty($_POST['password'])
 			 && isset($_POST['password_confirm']) 	&& !empty($_POST['password_confirm']) )
@@ -146,7 +146,7 @@
 						$_SESSION['flash']['success']='Votre compte a été créé avec succès !';
 						header('location:loginPage.php');
 					}
-					
+
 
 					else
 						echo '<div id="dialog" title="Erreur">
@@ -160,7 +160,7 @@
 						}*/
 
 
-					
+
 
 					//header('location:register_ok.php');
 				}
