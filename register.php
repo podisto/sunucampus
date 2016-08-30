@@ -47,7 +47,7 @@
 
 		<!--Formular-->
 		<fieldset class="registerfield">
-		<form method="post" action="Register.php" enctype="multipart/form-data">
+		<form method="post" action="" enctype="multipart/form-data">
 			<!--Fields-->
 			<input type="text" name="nom" placeholder="Nom" required="required">
 
