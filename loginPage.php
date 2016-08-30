@@ -77,7 +77,7 @@
 			}
 		?>
 			<fieldset class="loginfield" >
-			<form action="LoginPage.php" method="post" autocomplete="off" readonly onfocus="this.removeAttribute('readonly');">
+			<form action="" method="post" autocomplete="off" readonly onfocus="this.removeAttribute('readonly');">
 			<input type="text" name="pseudo" required placeholder="Pseudo"> </input></br>
 			<input type="password" name="password" required placeholder="Mot de passe"> </input></br>
 			<input type="submit" value="Se Connecter"> </input>
