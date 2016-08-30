@@ -27,7 +27,7 @@
 				if(!isset($_SESSION['password']) && !isset($_SESSION['pseudo']))
 					echo '<li><a href="contact.php">Contact</a></li>';
 			?>
-			
+
 			<!--Control Panel for admins-->
 			<?php
 				if( isset($_SESSION['role']))
@@ -44,7 +44,7 @@
 								echo 'logout.php';
 							}
 						else
-							echo "LoginPage.php";
+							echo "loginPage.php";
 
 					 ?>" class="login">
 					 <?php
@@ -58,16 +58,16 @@
 	</nav>
 
 	<!-- Sweet Alert Plugin -->
-	<script src="sweetalert/dist/sweetalert.min.js"></script> 
+	<script src="sweetalert/dist/sweetalert.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="sweetalert/dist/sweetalert.css">
-	
+
 	<?php if(isset($_SESSION['flash'])): ?>
-		<?php foreach ($_SESSION['flash'] as $type => $message){ 
+		<?php foreach ($_SESSION['flash'] as $type => $message){
 			echo '
 			<script type=\'text/javascript\'>
-				swal({   title: "Notification",   
-				text: "'.$message.'",   
-				timer: 2000,   
+				swal({   title: "Notification",
+				text: "'.$message.'",
+				timer: 2000,
 				showConfirmButton: false });
 			</script> ';
 			}
