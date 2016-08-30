@@ -1,0 +1,4 @@
+$a=addslashes($b);
+$a=strip_tages($b);
+
+cripter les mots de passe
